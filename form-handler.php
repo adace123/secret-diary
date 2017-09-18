@@ -1,7 +1,12 @@
 <?php 
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
 $_POST = json_decode(file_get_contents('php://input'), true);
 try{
-$db = new PDO("mysql:host=localhost;dbname=c9;",'adace1','');
+$db = new PDO("mysql:host=$server;dbname=$db;",$username,$password);
 } catch(Exception $e) {
     echo "Could not connect";
     exit(1);

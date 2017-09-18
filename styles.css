@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+body {
+  background: url("https://images.pexels.com/photos/411987/pexels-photo-411987.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white !important;
+}
+
+#container {
+  width: 35%;
+  margin-top: 10%;
+}
+
+input[type=text],
+input[type="password"] {
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+#main h2 {
+  margin-bottom: 3%;
+}
+
+button {
+  cursor: pointer;
+}

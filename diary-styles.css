@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+nav {
+  background-color: #8e24aa;
+  font-family: "Bad Script";
+  color: white;
+}
+
+.collection-item i {
+  cursor: pointer;
+}
+
+li i {
+  margin-left: 10px;
+}
+
+.collection-item a i {
+  color: #8e24aa;
+}
+
+.right li a {
+  font-size: 24px;
+}
